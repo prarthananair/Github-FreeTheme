@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-Rusume</title>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+#bg1 {
+border: 0px;
+padding: 10px;
+background:
+linear-gradient(135deg, #BBC2E2 21px, #FFFFFF 22px, #FFFFFF 24px, transparent 24px, transparent 67px, #FFFFFF 67px, #FFFFFF 69px, transparent 69px),
+linear-gradient(225deg, #BBC2E2 21px, #FFFFFF 22px, #FFFFFF 24px, transparent 24px, transparent 67px, #FFFFFF 67px, #FFFFFF 69px, transparent 69px)0 64px;
+background-color:#BBC2E2;
+background-size: 64px 128px;
+}
+
+#bg2 {
+border: 0px;
+padding: 10px;
+background:
+linear-gradient(135deg, #FFFFFF 21px, #BBC2E2 22px, #BBC2E2 24px, transparent 24px, transparent 67px, #BBC2E2 67px, #BBC2E2 69px, transparent 69px),
+linear-gradient(225deg, #FFFFFF 21px, #BBC2E2 22px, #BBC2E2 24px, transparent 24px, transparent 67px, #BBC2E2 67px, #BBC2E2 69px, transparent 69px)0 64px;
+background-color:#FFFFFF;
+background-size: 64px 128px;
+}
+
+table, th, td {
+  border: 0px;
+  border-spacing:10px;
+  padding:10px;
+  font-family:helvetica;
+}
+
+table#table1 {
+    width:65%; 
+    margin-left:17.5%; 
+    margin-right:17.5%;
+  }
+
+th, td {
+  padding: 0px;
+}
+
+th {
+  font-size:25px;
+  text-align:left;
+}
+
+td.profile img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+img.logo {
+  width: 7%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #b8f2e6;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #b8f2e6;
+  text-decoration: underline;
+}
+
+#box {
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.bar {
+  border-radius: 25px;
+  width:70%; 
+  margin-left:15%; 
+  margin-right:15%;
+  background-color: #ddd;
+}
+
+.skill {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.html {width: 80%; background-color: #b8f2e6; filter: brightness(90%);}
+.js {width: 40%; background-color: #b8f2e6; filter: brightness(90%);}
+.java {width: 65%; background-color: #b8f2e6; filter: brightness(90%);}
+.sql {width: 70%; background-color: #b8f2e6; filter: brightness(90%);}
+.c {width: 60%; background-color: #b8f2e6; filter: brightness(90%);}
+.ui {width: 50%; background-color: #b8f2e6; filter: brightness(90%);}
+
+.com {width: 65%; background-color: #b8f2e6; filter: brightness(90%);}
+.lead {width: 70%; background-color: #b8f2e6; filter: brightness(90%);}
+.team {width: 80%; background-color: #b8f2e6; filter: brightness(90%);}
+.ps {width: 65%; background-color: #b8f2e6; filter: brightness(90%);}
+.ct {width: 60%; background-color: #b8f2e6; filter: brightness(90%);}
+.lang {width: 60%; background-color: #b8f2e6; filter: brightness(90%);}
+
+skl {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  width:65%; 
+  margin-left:17.5%; 
+  margin-right:17.5%;
+  padding: 10px;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+i {
+  text-align:center;
+  display:inline-block;
+  font-size:36px; 
+  color:#bbc2e2;
+}
+
+.to_top {
+  border: none;
+  color: black;
+  padding: 7px 22px;
+  text-align: center;
+  float: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.bubble {
+  margin: 100px auto;
+  background: #b8f2e6;
+  padding: 5px 20px;
+  font-weight: 900;
+  color: #00bfb6;
+  font-family: helvetica;
+  position: relative;
+}
+
+.top:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 30px solid #b8f2e6;
+  right: 44%;
+  top: -50px;
+}
+
+dl, dt, dd {
+text-align:center;
+margin-left:0%;
+margin-right:0%;
+}
+
+</style>
+</head>
+
+<body>
+<a id="top"></a>
+<section id="bg1">
+
+<h1 style="font-family: helvetica; font-size: 20px; text-align:right;">
+  <a href="#about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#skl">Skills</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#edu">Education</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#work">Work Experience</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</h1>
+<br>
+
+
+
+
+
+
+<h1 id="about" style="font-family:helvetica; font-size:200%; text-align:center;"><b>About</b></h1>
+
+<table id="table1" style="background-color:white; font-size:15px;">
+  <tr>
+    <td rowspan="4" class="profile"><img src="photos/IMG_1495.jpeg" width="1784" height="2323"></td>
+    <th><strong>Prarthana Nair</strong></th>
+  </tr>
+  <tr>
+    <td>Student at Taylor&apos;s University</td>
+  </tr>
+  <tr>
+    <td>
+    <table style="background-color:white; font-size:18px;">
+        <tr>
+    	<td>AGE</td>
+    	<td>19</td>
+        </tr>
+  	<tr>
+    	<td>ADDRESS</td>
+    	<td>PJ8 Service Suites, Petaling Jaya, Selangor, Malaysia</td>
+  	</tr>
+  	<tr>
+    	<td>EMAIL</td>
+    	<td>prarthana1305&commat;gmail.com</td>
+        </tr>
+        <tr>
+    	<td>PHONE</td>
+    	<td>+60173960379</td>
+  	</tr>
+        <tr style="background-color:#b8f2e6;text-align:center;">
+    	<td colspan="2"><a href="https://www.facebook.com/prarthana1122/" target="_blank"><img src="photos/f.png" alt="Facebook" class="logo"></a>
+		<a href="https://www.linkedin.com/in/prarthana-nair-852706154/" target="_blank"><img src="photos/l.png" alt="LinkedIn" class="logo"></a>
+		<a href="https://twitter.com/NairPrarthana" target="_blank"><img src="photos/t2.png" alt="Twitter" class="logo"></a></td>
+  	</tr>
+    </table>
+    </td>
+ </tr>
+</table>
+<br>
+</section>
+<section id="bg2">
+
+<p style="font-family:helvetica; font-size:125%; text-align:center; margin-left:18%; margin-right:18%;"><b>Hello! I’m Prarthana Nair, an International student at Taylor's University Malaysia, studying Bachelor of IT. I am currently learning numerous programming languages including HTML &amp; CSS, JavaScript, Java, SQL, and C++.</b></p>
+
+<button type="button" class="to_top" style="background-color:#b8f2e6; margin-top:-1%;"><a href="#top">Return to top</a></button>
+
+<br>
+<br>
+<hr style="height:2px; border-width:0; color:#b8f2e6; background-color:#b8f2e6; filter: brightness(80%); margin-left:10%; margin-right:10%;">
+<br>
+
+
+
+
+
+
+
+<h1 id="skl" style="font-family:helvetica; font-size:200%; text-align:center;"><b>Skills</b></h1>
+
+<div class="row">
+  <div class="column" style="background-color: white; border-right: transparent; text-align:center;">
+<br>
+    <i class="fas fa-user-cog" style="font-size:36px; color:#bbc2e2;"></i>
+    <h2 style="font-family:helvetica; font-size:140%; text-align:center; width: 100%; font-weight:normal;">Professional Skills</h2>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">HTML &amp; CSS</p>
+      <div class="bar">
+        <div class="skill html" id="box"></div>
+      </div>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">JavaScript</p>
+      <div class="bar">
+        <div class="skill js" id="box"></div>
+      </div>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">Java</p>
+      <div class="bar">
+        <div class="skill java" id="box"></div>
+      </div>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">SQL &amp; PHP</p>
+      <div class="bar">
+        <div class="skill sql" id="box"></div>
+      </div>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">C++</p>
+      <div class="bar">
+        <div class="skill c" id="box"></div>
+      </div>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">UI &frasl; UX Design</p>
+      <div class="bar">
+        <div class="skill ui" id="box"></div>
+      </div>
+  </div>
+  
+  <div class="column" style="background-color: white; text-align:center;">
+<br>
+    <i class="fas fa-user-edit" style="font-size:36px; color:#bbc2e2;"></i>
+    <h2 style="font-family:helvetica; font-size:140%; text-align:center; width: 100%; font-weight:normal;">Personal Skills</h2>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">Communication</p>
+      <div class="bar">
+        <div class="skill com" id="box"></div>
+      </div>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">Leadership</p>
+      <div class="bar">
+        <div class="skill lead" id="box"></div>
+      </div>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">Teamwork</p>
+      <div class="bar">
+        <div class="skill team" id="box"></div>
+      </div>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">Problem Solving</p>
+      <div class="bar">
+        <div class="skill ps" id="box"></div>
+      </div>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">Creative Thinking</p>
+      <div class="bar">
+        <div class="skill ct" id="box"></div>
+      </div>
+    <p style="font-family:helvetica; font-size:100%; text-align:center;">Language</p>
+      <div class="bar">
+        <div class="skill lang" id="box"></div>
+      </div>
+  </div>
+</div>
+<button type="button" class="to_top" style="background-color:#b8f2e6;"><a href="#top">Return to top</a></button>
+
+<br>
+<br>
+<br>
+<hr style="height:2px; border-width:0; color:#b8f2e6; background-color:#b8f2e6; filter: brightness(80%); margin-left:10%; margin-right:10%;">
+<br>
+
+
+
+
+
+
+
+
+<h1 id="edu" style="font-family:helvetica; font-size:200%; text-align:center;"><b>Education</b></h1>
+<br>
+
+<div style="text-align:center;">
+  <i class="fas fa-graduation-cap" style="font-size:45px; text-align:center; background-color:white;"></i>
+  <div class="bubble top" style="margin-left:37%; margin-right:37%; margin-top:3%; text-align:center;">
+    <dl>
+      <dd style="font-weight:strong; color:white; background-color:#6fdec7; padding:5px;">2019-2022</dd><br><br>
+      <dt style="font-family:helvetica; font-size:140%; font-weight:strong; color:black;">Taylor&apos;s University Lakeside Malaysia</dt>
+<br>
+      <dd style="font-family:helvetica; font-size:120%; font-weight:normal; color:black;">Bachelor of IT</dd>
+    </dl>
+  </div>
+
+  <i class="fas fa-school" style="font-size:40px; text-align:center; margin-top:-20%; background-color:white;"></i>
+  <div class="bubble top" style="margin-left:37%; margin-right:37%; margin-top:3%; text-align:center;">
+    <dl>
+      <dd style="font-weight:strong; color:white; background-color:#6fdec7; padding:5px;">2015-2019</dd><br><br>
+      <dt style="font-family:helvetica; font-size:140%; font-weight:strong; color:black;">Garden International School Malaysia</dt>
+<br>
+      <dd style="font-family:helvetica; font-size:120%; font-weight:normal; color:black;">A-Levels</dd>
+    </dl>
+  </div>
+<div>
+<button type="button" class="to_top" style="background-color:#b8f2e6; margin-top:-5%;"><a href="#top">Return to top</a></button>
+
+<hr style="height:2px; border-width:0; color:#b8f2e6; background-color:#b8f2e6; filter: brightness(80%); margin-left:10%; margin-right:10%; margin-top:-2%;">
+<br>
+
+
+
+
+
+
+
+<h1 id="work" style="font-family:helvetica; font-size:200%; text-align:center;"><b>Work Experience</b></h1>
+
+<table align="center" id="table1" style="background:transparent; border-collapse:collapse;">
+  <tr>
+    <td>
+    <table align="center" style="font-size:18px; text-align:center;">
+      <tr>
+        <td style="border-top: 6px solid #b8f2e6; background-color:white; width:350px;">
+        <i class="fas fa-child" style="font-size:36px; text-align:center; margin-top:3%;"></i>
+        <dl>
+      	  <dd style="font-weight:strong; color:#b8f2e6; filter: brightness(80%);">2019</dd><br>
+      	  <dt style="font-family:helvetica; font-size:125%; font-weight:strong; color:black;">iTrainKids Malaysia</dt><br>
+      	  <dd style="font-family:helvetica; font-size:80%; font-weight:normal; color:grey;">Part-Time Sales Assistant</dd>
+    	</dl>
+        </td>
+        <td style="width:30px; background:transparent;"></td>
+        <td style="border-top: 6px solid #b8f2e6; background-color:white; width:350px;">
+        <i class="fas fa-calendar-alt" style="font-size:36px; text-align:center; margin-top:3%;"></i>
+        <dl>
+      	  <dd style="font-weight:strong; color:#b8f2e6; filter: brightness(80%);">2019</dd><br>
+      	  <dt style="font-family:helvetica; font-size:125%; font-weight:strong; color:black;">#mydigitalmaker Fair 2019</dt><br>
+      	  <dd style="font-family:helvetica; font-size:80%; font-weight:normal; color:grey;">Part-Time Event Assistant</dd>
+    	</dl>
+        </td>
+      </tr>
+      <tr style="height:30px;">
+      </tr>
+      <tr>
+        <td colspan="3" style="border-top: 6px solid #b8f2e6; background-color:white; width:350px;">
+        <i class="fas fa-pencil-ruler" style="font-size:36px; text-align:center; margin-top:2%;"></i>
+        <dl>
+      	  <dd style="font-weight:strong; color:#b8f2e6; filter: brightness(80%);">2017</dd><br>
+      	  <dt style="font-family:helvetica; font-size:125%; font-weight:strong; color:black;">Mereka Makerspace</dt><br>
+      	  <dd style="font-family:helvetica; font-size:80%; font-weight:normal; color:grey;">Part-Time Intern</dd>
+    	</dl>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<button type="button" class="to_top" style="background-color:#b8f2e6; margin-top:-5%;"><a href="#top">Return to top</a></button>
+
+</section>
+
+<section id="bg1">
+<br>
+<br>
+<br>
+<br>
+<p style="text-align:center; font-family:helvetica; color:grey; filter: brightness(80%);">&copy; 2020 HTML. All rights reserved.</p>
+</section>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
